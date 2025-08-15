@@ -13,7 +13,7 @@ public class Main {
 
         List<TaxPayer> list = new ArrayList<TaxPayer>();
 
-        System.out.println("Enter the number of tax payers: ");
+        System.out.print("Enter the number of tax payers: ");
         Scanner sc=  new Scanner(System.in);
         int n = sc.nextInt();
         sc.nextLine();
@@ -24,6 +24,7 @@ public class Main {
 
             System.out.print("Individual or company (i/c)? ");
             char type = sc.next().charAt(0);
+            sc.nextLine();
 
 
             System.out.print("Name: ");
@@ -49,7 +50,20 @@ public class Main {
 
         }
 
+        for (TaxPayer tp : list) {
+            System.out.println(tp);
+        }
 
+        System.out.println();
+        System.out.println("TAXES PAID:");
+
+        double totalTaxes = 0;
+        for (TaxPayer tp : list) {
+            totalTaxes += tp.tax();
+        }
+
+        System.out.println();
+        System.out.println("TOTAL TAXES: $ " + String.format("%.2f", totalTaxes));
         sc.close();
     }
 }

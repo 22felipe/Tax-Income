@@ -29,6 +29,8 @@ public abstract class TaxPayer {
 
     public abstract double tax();
 
-
+    public String toString() {
+        return getName() + ": $ " + String.format("%.2f", tax());
+    }
 
 }
