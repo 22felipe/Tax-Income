@@ -63,7 +63,6 @@ Individual or company (i/c)? i
 Name: Maria
 Anual income: 50000
 Health expenditures: 2000
-
 Tax payer #2 data:
 Individual or company (i/c)? c
 Name: EmpresaX
@@ -71,8 +70,10 @@ Anual income: 400000
 Number of employees: 25
 
 TAXES PAID:
-Maria: $ 12300.00
-EmpresaX: $ 56000.00
+Maria: $ 11500,00
+EmpresaX: $ 56000,00
+
+TOTAL TAXES: $ 67500,00
 ```
 
 
