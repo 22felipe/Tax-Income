@@ -20,7 +20,7 @@ public class Main {
 
         for (int i = 0; i < n; i++){
 
-            System.out.println("Tax payer #" + i+1 + " data: ");
+            System.out.println("Tax payer #" + (i+1) + " data: ");
 
             System.out.print("Individual or company (i/c)? ");
             char type = sc.next().charAt(0);
@@ -56,6 +56,10 @@ public class Main {
 
         System.out.println();
         System.out.println("TAXES PAID:");
+
+        for (TaxPayer tp : list) {
+            System.out.println(tp);
+        }
 
         double totalTaxes = 0;
         for (TaxPayer tp : list) {
