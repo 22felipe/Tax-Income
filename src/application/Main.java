@@ -1,11 +1,17 @@
 package application;
 
+import entities.Company;
+import entities.Individual;
 import entities.TaxPayer;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
+        List<TaxPayer> list = new ArrayList<TaxPayer>();
 
         System.out.println("Enter the number of tax payers: ");
         Scanner sc=  new Scanner(System.in);
@@ -23,6 +29,22 @@ public class Main {
             System.out.print("Name: ");
             String name= sc.nextLine();
 
+            System.out.print("Anual income: ");
+            double income= sc.nextDouble();
+
+            if(type == 'i'){
+                System.out.print("Health expenditures: ");
+                double healthExpenditure = sc.nextDouble();
+
+                list.add (new Individual(name, income, healthExpenditure));
+
+            }
+            else{
+                System.out.print("Number of employees: ");
+                int employees = sc.nextInt();
+
+                list.add(new Company(name, income, employees));
+            }
 
 
         }

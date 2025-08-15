@@ -1,13 +1,14 @@
 package entities;
 
-public class TaxPayer {
+public abstract class TaxPayer {
 
     private String name;
     private double anualIncome;
 
-    public TaxPayer(double anualIncome, String name) {
-        this.anualIncome = anualIncome;
+
+    public TaxPayer(String name, double anualIncome) {
         this.name = name;
+        this.anualIncome = anualIncome;
     }
 
     public double getAnualIncome() {
@@ -26,7 +27,7 @@ public class TaxPayer {
         this.name = name;
     }
 
-    //public abstract double tax();
+    public abstract double tax();
 
 
 

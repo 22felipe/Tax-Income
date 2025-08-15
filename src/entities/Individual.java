@@ -6,7 +6,7 @@ public class Individual extends TaxPayer{
     private double healthExpenditure;
 
     public Individual(String name, double anualIncome, double healthExpenditure) {
-        super(anualIncome, name);
+        super(name, anualIncome);
         this.healthExpenditure = healthExpenditure;
     }
 
