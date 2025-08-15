@@ -56,7 +56,7 @@ src/
     Em seguida, siga as instruções no console para cadastrar os contribuintes e visualizar os impostos.
 
 ### Exemplo de Saída
-
+```
 Enter the number of tax payers: 2
 Tax payer #1 data:
 Individual or company (i/c)? i
@@ -73,6 +73,7 @@ Number of employees: 25
 TAXES PAID:
 Maria: $ 12300.00
 EmpresaX: $ 56000.00
+```
 
 
 ---
