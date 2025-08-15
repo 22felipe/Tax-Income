@@ -2,6 +2,7 @@ package entities;
 
 public class Company extends TaxPayer{
 
+
     private int employees;
 
     public Company( String name, double anualIncome, int employees) {
