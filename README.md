@@ -28,6 +28,7 @@ O sistema permite:
 
 ### Estrutura do Projeto
 
+```
 src/
 ├─ entities/
 │  ├─ TaxPayer.java        # Classe abstrata
@@ -35,6 +36,7 @@ src/
 │  └─ Company.java         # Subclasse de TaxPayer
 └─ application/
 └─ Main.java            # Classe principal para execução
+```
 
 
 ### Como Executar
